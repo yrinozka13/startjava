@@ -3,6 +3,7 @@ public class Calculator {
         int num1 = 240;
         int num2 = 4;
         char sign = '+';
+
         if (sign == '+') {
             System.out.println("Sum of numbers: 240 + 4 = " + (num1 + num2));
         } else if (sign == '-') {
@@ -11,9 +12,13 @@ public class Calculator {
             System.out.println("Multiplication of numbers: 240 * 4 = " + (num1 * num2));
         } else if (sign == '/') {
             System.out.println("Division of numbers: 240 / 4 = " + (num1 / num2));
-        } else if (sign == '*') {
-            for (int a = 2; a <= 1024; a *= 2) {
-                System.out.println("Raising to the power of the number 2 in the 5th degree = " + a);
+        } else if (sign == '^') {
+            int result = 1;
+            int power = 1;
+            while (power <= 8) {
+                result = result * num2;
+                System.out.println(num2 + " to the extent " + power + " = " + result);
+                power++;
             }
         } else if (sign == '%') {
             System.out.println("Division modulo 240 by 42 = " + (num1 % num2));
