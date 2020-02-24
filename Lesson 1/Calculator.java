@@ -15,9 +15,9 @@ public class Calculator {
         } else if (sign == '^') {
             int result = 1;
             int power = 1;
-            while (power <= 4) {
+            while (power <= num2) {
                 result *= num1;
-                System.out.println(num1 + " to the extent " + power + " = " + result);
+                System.out.println(result);
                 power++;
             }
         } else if (sign == '%') {
