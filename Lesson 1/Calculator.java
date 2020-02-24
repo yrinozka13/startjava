@@ -17,9 +17,9 @@ public class Calculator {
             int power = 1;
             while (power <= num2) {
                 result *= num1;
-                System.out.println(result);
                 power++;
             }
+            System.out.println(result);
         } else if (sign == '%') {
             System.out.println("Division modulo 240 by 42 = " + (num1 % num2));
         }
