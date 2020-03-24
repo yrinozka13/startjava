@@ -6,7 +6,7 @@ public class Jaeger {
     private float weight;
 
     public Jaeger() {
-        
+
     }
 
     public Jaeger(String modelName, String mark, String origin, float height, float weight) {

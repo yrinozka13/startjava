@@ -16,38 +16,38 @@ public class Calculator {
     }
 
     //+, -, *, /, ^, %
-    public void calculate(){
-        switch(mathOperation) {
+    public void calculate() {
+        switch (mathOperation) {
             case '+':
-            System.out.println(firstNumber + secondNumber);
-            break;
-             case '-':
-            System.out.println(firstNumber - secondNumber);
-            break;
+                System.out.println(firstNumber + secondNumber);
+                break;
+            case '-':
+                System.out.println(firstNumber - secondNumber);
+                break;
             case '*':
-            System.out.println(firstNumber * secondNumber);
-            break;
+                System.out.println(firstNumber * secondNumber);
+                break;
             case '/':
-            System.out.println(firstNumber / secondNumber);
-            break;
+                System.out.println(firstNumber / secondNumber);
+                break;
             case '^':
-            pow();
-            break;
+                pow();
+                break;
             case '%':
-            System.out.println(firstNumber % secondNumber);
-            break;
+                System.out.println(firstNumber % secondNumber);
+                break;
             default:
-            System.out.println("Error");
+                System.out.println("Error");
         }
     }
 
     private void pow() {
         int result = 1;
-            for(int i = 0; i < secondNumber; i++) {
-                result = result * firstNumber;
-            }
-            System.out.println(result);
+        for (int i = 0; i < secondNumber; i++) {
+            result = result * firstNumber;
         }
+        System.out.println(result);
+    }
 }
 
 

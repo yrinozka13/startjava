@@ -11,7 +11,5 @@ public class Player {
         return "Player{" +
                 "name='" + name + ", number='" + number +
                 '}';
-
     }
-
 }
